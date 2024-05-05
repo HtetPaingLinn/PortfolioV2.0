@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_zp1un3k",
+        "template_u4wnmmt",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "azVJFSzzUE7DlxmUB"
       )
       .then(
         (result) => {
@@ -76,7 +76,7 @@ const Contact = () => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg width="350px" height="350px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"

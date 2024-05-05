@@ -6,26 +6,30 @@ const items = [
   {
     id: 1,
     title: "React Todo List",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "https://images.pexels.com/photos/5717411/pexels-photo-5717411.jpeg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "https://github.com/HtetPaingLinn/todoWebReact",
   },
   {
     id: 2,
     title: "Fitfinity Fitness Website",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "https://img.freepik.com/free-photo/people-doing-indoor-cycling_23-2149270268.jpg?t=st=1714894952~exp=1714898552~hmac=9cd7e5627ca8327d26d91954ef903bc7e5cde5bb3799ddce78e92ac6622e1b42&w=996",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "https://github.com/HtetPaingLinn/FitfinityGymWeb",
   },
   {
     id: 3,
     title: "Fitfinity Healthcare Web Application",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "https://img.freepik.com/free-photo/asian-medical-doctor-take-care-explain-senior-elderly-woman-female-patient-wheelchair-with-tablet-looking-camera_554837-54.jpg?t=st=1714894399~exp=1714897999~hmac=357d6ef427c705f74ad59c0a3f0712fef6e4bd9db41c788e9812fc5876d1b526&w=996",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "https://github.com/HtetPaingLinn/FitfinityHealthcareWebsiteJ2EE",
   },
   {
     id: 4,
     title: "Vintage Car Really",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    img: "https://images.pexels.com/photos/248687/pexels-photo-248687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    link: "https://github.com/HtetPaingLinn/VintageCarRallyWebsite",
   },
 ];
 
@@ -39,16 +43,18 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <button>See Demo</button>
+            </a>
           </motion.div>
         </div>
       </div>
