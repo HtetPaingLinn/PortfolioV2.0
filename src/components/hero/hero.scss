@@ -43,6 +43,7 @@
 
       .buttons {
         button {
+          font-size: 20px;
           padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
@@ -50,7 +51,14 @@
           color: white;
           margin-right: 20px;
           cursor: pointer;
-          font-weight: 300;
+          font-weight: 500;
+        }
+      }
+
+      .buttons {
+        button:hover{
+          background-color: white;
+          color: rebeccapurple;
         }
       }
 
@@ -88,5 +96,6 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    pointer-events: none;
   }
 }
