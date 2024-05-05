@@ -13,7 +13,7 @@ const items = [
   {
     id: 2,
     title: "Fitfinity Fitness Website",
-    img: "https://img.freepik.com/free-photo/people-doing-indoor-cycling_23-2149270268.jpg?t=st=1714894952~exp=1714898552~hmac=9cd7e5627ca8327d26d91954ef903bc7e5cde5bb3799ddce78e92ac6622e1b42&w=996",
+    img: "https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
     link: "https://github.com/HtetPaingLinn/FitfinityGymWeb",
   },
