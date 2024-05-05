@@ -23,7 +23,7 @@ const Navbar = () => {
             <img src="/instagram.png" alt="" />
           </a>
           <a href="#">
-            <img src="/youtube.png" alt="" />
+            <img src="/linkedin.png" alt="" />
           </a>
           <a href="#">
             <img src="/dribbble.png" alt="" />
