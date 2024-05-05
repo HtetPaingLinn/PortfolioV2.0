@@ -1,6 +1,6 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 const Navbar = () => {
   return (
@@ -16,17 +16,17 @@ const Navbar = () => {
           Thehpl Dev
         </motion.span>
         <div className="social">
-          <a href="#">
+          <a href="https://www.facebook.com/htetpainglinn28" target="_blank">
             <img src="/facebook.png" alt="" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/thehpl" target="_blank">
             <img src="/instagram.png" alt="" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/htetpainglinn" target="_blank">
             <img src="/linkedin.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a href="https://github.com/htetpainglinn" target="_blank">
+            <img src="/github.png" alt="" />
           </a>
         </div>
       </div>
