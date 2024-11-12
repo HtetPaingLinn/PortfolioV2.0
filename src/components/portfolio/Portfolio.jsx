@@ -5,31 +5,60 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Todo List",
-    img: "https://images.pexels.com/photos/5717411/pexels-photo-5717411.jpeg",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: "https://github.com/HtetPaingLinn/todoWebReact",
+    title: "Fitfinity MedAI Diagnostic Bot Web Application",
+    img: "https://images.pexels.com/photos/3952224/pexels-photo-3952224.jpeg",
+    desc: "A diagnostic bot web application that uses AI to assist users in identifying potential health issues based on symptoms.",
+    languages: ["Laravel", "PHP", "Prolog", "React", "Node.js"],
+    link: "https://github.com/HtetPaingLinn/Fitfinity-MedAI-Diagnostic-Bot-Web-Application",
   },
   {
     id: 2,
-    title: "Fitfinity Fitness Website",
-    img: "https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    link: "https://github.com/HtetPaingLinn/FitfinityGymWeb",
+    title: "ProLearn Virtual Learning Environment",
+    img: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+    desc: "An e-learning platform designed to create a virtual learning environment with courses, quizzes, and interactive lessons.",
+    languages: ["JavaScript", "React", "Node.js", "MongoDB"],
+    link: "https://github.com/HtetPaingLinn/ProLearn-Virtual-Learning-Environment",
   },
   {
     id: 3,
     title: "Fitfinity Healthcare Web Application",
-    img: "https://img.freepik.com/free-photo/asian-medical-doctor-take-care-explain-senior-elderly-woman-female-patient-wheelchair-with-tablet-looking-camera_554837-54.jpg?t=st=1714894399~exp=1714897999~hmac=357d6ef427c705f74ad59c0a3f0712fef6e4bd9db41c788e9812fc5876d1b526&w=996",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    img: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg",
+    desc: "A healthcare application providing services like appointment booking, health tracking, and patient records.",
+    languages: ["Java", "J2EE", "SQL", "Bootstrap"],
     link: "https://github.com/HtetPaingLinn/FitfinityHealthcareWebsiteJ2EE",
   },
   {
     id: 4,
-    title: "Vintage Car Really",
-    img: "https://images.pexels.com/photos/248687/pexels-photo-248687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Vintage Car Rally",
+    img: "https://images.pexels.com/photos/248687/pexels-photo-248687.jpeg",
+    desc: "An event website for vintage car enthusiasts to gather, showcase their vehicles, and participate in rallies.",
+    languages: ["JavaScript", "HTML", "CSS", "Node.js"],
     link: "https://github.com/HtetPaingLinn/VintageCarRallyWebsite",
+  },
+
+  {
+    id: 6,
+    title: "Fruit Detection",
+    img: "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
+    desc: "A fruit detection system that classifies different types of fruit using computer vision techniques.",
+    languages: ["Python", "TensorFlow", "OpenCV"],
+    link: "https://github.com/HtetPaingLinn/FruitDetection",
+  },
+  {
+    id: 7,
+    title: "Fitfinity Fitness Website",
+    img: "https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg",
+    desc: "A fitness website offering workout plans, fitness tracking, and dietary tips for users.",
+    languages: ["JavaScript", "HTML", "CSS"],
+    link: "https://github.com/HtetPaingLinn/FitfinityGymWeb",
+  },
+  {
+    id: 8,
+    title: "React Todo List",
+    img: "https://images.pexels.com/photos/5717411/pexels-photo-5717411.jpeg",
+    desc: "A simple and interactive to-do list built with React to help users manage tasks efficiently.",
+    languages: ["JavaScript", "React"],
+    link: "https://github.com/HtetPaingLinn/todoWebReact",
   },
 ];
 
@@ -47,11 +76,12 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+            <img src={item.img} alt={item.title} />
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
+            <p><strong>Languages:</strong> {item.languages.join(", ")}</p>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               <button>See Demo</button>
             </a>
